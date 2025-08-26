@@ -42,35 +42,90 @@
         .social-icon {
             fill: white;
         }
+        /* Hamburger Menu Styles */
+        .hamburger-menu {
+            display: none;
+        }
+        @media (max-width: 640px) {
+            .hamburger-menu {
+                display: block;
+            }
+            .nav-menu {
+                display: none;
+            }
+            .nav-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(31, 41, 55, 0.95);
+                z-index: 20;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+            }
+            .nav-menu a {
+                font-size: 1.25rem;
+                color: white;
+                text-align: center;
+                padding: 0.5rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Contact Panel -->
-    <div class="contact-panel">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <span class="flex items-center">
+    <div class="contact-panel overflow-x-hidden">
+        <div class="container mx-auto flex flex-col sm:flex-row sm:justify-between items-center space-y-2 sm:space-y-0">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-center sm:text-left">
+                <span class="flex items-center justify-center sm:justify-start">
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                     </svg>
                     08053590094
                 </span>
-                <span>latterrainchurchbelievers@gmail.com</span>
+                <span class="text-sm">latterrainchurchbelievers@gmail.com</span>
             </div>
-            <div class="flex items-center space-x-4 mr-4">
-                <a href="tithe-offering.html" class="bg-indigo-600 text-white px-4 py-1 rounded-md hover:bg-indigo-700">Give</a>
+            <div class="flex items-center space-x-2 sm:space-x-4">
+                <!-- Hamburger Icon (Mobile Only) -->
+                <div class="hamburger-menu sm:hidden">
+                    <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </div>
+                <!-- Social Icons -->
                 <a href="https://www.facebook.com/profile.php?id=61571370155866" target="_blank" class="hover:opacity-80">
-                    <svg class="w-6 h-6 social-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.494v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                    <svg class="w-4 h-4 sm:w-6 sm:h-6 social-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.494v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
                 </a>
                 <a href="https://x.com/spiritrain24?t=M0QdMuOoGuP4jMjzvVmw9Q&s=09" target="_blank" class="hover:opacity-80">
-                    <svg class="w-6 h-6 social-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <svg class="w-4 h-4 sm:w-6 sm:h-6 social-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
                 <a href="https://youtu.be/-kqj4OPFLls?si=1DGiMJBkI18M7kQA" target="_blank" class="hover:opacity-80">
-                    <svg class="w-6 h-6 social-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    <svg class="w-4 h-4 sm:w-6 sm:h-6 social-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
+                <!-- Give Button (Desktop Only) -->
+                <a href="tithe-offering.html" class="hidden sm:block bg-indigo-600 text-white px-4 py-1 rounded-md hover:bg-indigo-700">Give</a>
             </div>
         </div>
     </div>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-10">
+        <div class="container mx-auto">
+            <!-- Navigation Links (Hidden on Mobile, Shown in Pop-up) -->
+            <div class="nav-menu flex justify-center space-x-6">
+                <a href="index.html" class="hover:text-indigo-300">Home</a>
+                <a href="about.html#about" class="hover:text-indigo-300">About</a>
+                <a href="services.html#services" class="hover:text-indigo-300">Services</a>
+                <a href="sermons.html#sermons" class="hover:text-indigo-300">Sermons</a>
+                <a href="news&events.html#events" class="hover:text-indigo-300">News & Events</a>
+                <a href="gallery.html#gallery" class="hover:text-indigo-300">Gallery</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <header class="hero">
@@ -79,18 +134,6 @@
             <p class="text-lg md:text-xl mb-6">Apostolic Cry For The Spirit Rain, Spreading The Full Gospel To Reach Everyone</p>
         </div>
     </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-10">
-        <div class="container mx-auto flex justify-center space-x-6">
-            <a href="index.html" class="hover:text-indigo-300">Home</a>
-            <a href="about.html#about" class="hover:text-indigo-300">About</a>
-            <a href="services.html#services" class="hover:text-indigo-300">Services</a>
-            <a href="sermons.html#sermons" class="hover:text-indigo-300">Sermons</a>
-            <a href="news&events.html#events" class="hover:text-indigo-300">News & Events</a>
-            <a href="gallery.html#gallery" class="hover:text-indigo-300">Gallery</a>
-        </div>
-    </nav>
 
     <!-- Image Section -->
     <section class="py-12 bg-gray-100">
@@ -151,8 +194,7 @@
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-6">
-        <p>Spirit Rain Church | 23, Rad Events Hall And Shopping Center.
-No 1 Gba'gi Junction Akobo, Olohunda Road, Ibadan | latterrainchurchbelievers@gmail.com</p>
+        <p>Spirit Rain Church | 23, Rad Events Hall And Shopping Center, No 1 Gba'gi Junction Akobo, Olohunda Road, Ibadan | latterrainchurchbelievers@gmail.com</p>
         <div class="mt-4 flex justify-center space-x-6">
             <a href="https://www.facebook.com/profile.php?id=61571370155866" target="_blank" class="hover:opacity-80">
                 <svg class="w-6 h-6 social-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.494v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
@@ -176,6 +218,21 @@ No 1 Gba'gi Junction Akobo, Olohunda Road, Ibadan | latterrainchurchbelievers@gm
                 nav.classList.remove('scrolled');
             }
         });
+
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navMenu = document.querySelector('.nav-menu');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+            // Close menu when a link is clicked
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
     </script>
 </body>
 </html>
