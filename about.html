@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Spirit Rain Church</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+        }
+        .section {
+            padding: 4rem 1rem;
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+        nav {
+            transition: background-color 0.3s ease;
+        }
+        nav.scrolled {
+            background-color: rgba(31, 41, 55, 0.95);
+        }
+        .image-section {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        .image-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 0.5rem;
+        }
+        .contact-panel {
+            background-color: #000;
+            color: white;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+        .social-icon {
+            fill: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Contact Panel -->
+    <div class="contact-panel">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    08053590094
+                </span>
+                <span>latterrainchurchbelievers@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-4 mr-4">
+            <a href="https://www.facebook.com/profile.php?id=61571370155866" target="_blank" class="hover:opacity-80">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.494v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+            <a href="https://x.com/spiritrain24?t=M0QdMuOoGuP4jMjzvVmw9Q&s=09" target="_blank" class="hover:opacity-80">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://youtu.be/-kqj4OPFLls?si=1DGiMJBkI18M7kQA" target="_blank" class="hover:opacity-80">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="index.html" class="hover:text-indigo-300">Home</a>
+            <a href="about.html#about" class="hover:text-indigo-300">About</a>
+            <a href="services.html#services" class="hover:text-indigo-300">Services</a>
+            <a href="sermons.html#sermons" class="hover:text-indigo-300">Sermons</a>
+            <a href="news&events.html#events" class="hover:text-indigo-300">News & Events</a>
+            <a href="gallery.html#gallery" class="hover:text-indigo-300">Gallery</a>
+        </div>
+    </nav>
+
+    <!-- Pastors Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">Our Pastors</h2>
+            <div class="grid grid-cols-1 gap-12">
+                <!-- Pastor Israel Obah -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-600 text-center pt-6">Pastor Israel Obah</h3>
+                    <div class="flex flex-col md:flex-row p-6">
+                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                            <img src="https://raw.githubusercontent.com/victorkash/spiritrainchurch.com/refs/heads/main/P1.jpeg" alt="Pastor Israel Obah" class="w-full md:w-48 h-48 object-cover rounded-lg">
+                        </div>
+                        <div class="flex-1 text-gray-700 leading-relaxed">
+                            I was born on a Tuesday, July 15th, 1975, to my beloved parents, Mr. Stephen Obah Emmanuel and my late mother, Mrs. Victoria Ofuname Obah, who went to be with the Lord on August 19th, 2025. My life has been a journey of grace, marked by childhood encounters with God, salvation, ministry, marriage, and international service.
+                            As a child, I had remarkable spiritual experiences that revealed God’s hand upon me. Around the age of seven to eight years old, while standing by the orange tree in front of our family house, I looked into the sky and saw a vision: a table was set, and a man stood on one side of it. 
+                            At the other end was a figure that looked like me, and I saw the man pour oil upon that figure. I ran to call my late half-sister Ebun (then Ebun Obah), but they could not see what I was seeing.
+                            That moment stayed in my spirit as a divine sign of God’s calling. Another experience came when I was speaking with an older girl about Jesus Christ.
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                           She began to confess who she was and the kingdom of darkness she belonged to. From that moment, I began to realize the power in the name of Jesus, and it shaped my thoughts until the day I truly gave my life to Christ. That defining day came in December 1992 at about 8:00 pm, when I surrendered my life to Jesus Christ and became born again. That encounter became the true beginning of my walk with God. I started my primary education at Somorika Primary School, Somorika (1980–1982) and continued at Azane Model Primary School, Ibillo (1983–1986). I attended Ibillo Boys Grammar School, Ibillo (1987–1991) before completing at Anglican Grammar School, Igarra (1991–1992). I gained admission into the Federal College of Education in 1993 to study Agricultural Science/Education, graduating in 1996. In December 1996, during the General Convention of the Gospel Mission Bible Church, I received my first ordination as a Minister of the Gospel. My first full-time pastoral work was at Arokho in Owan East L.G.A of Edo State (1996–1998). I was then transferred to Auchi in Etsako East L.G.A (1998–1999). In 1999, I received a “Macedonian call” to Lagos, where I pastored from 1999–2002. From there, I was transferred back to Edo State and pastored the Benin City branch from 2002–2004. On October 9th, 2005, I was blessed in marriage to my beloved wife, Ifueli Sarah Akeredolu. Together, God has blessed us with four wonderful children: Rehoboth, Beloved, God’sfavour, and Sharon. Following the leading of the Holy Spirit, I connected with Omega Fire Ministries and attended the Omega Bible Institute, where on November 4th, 2007, I received my Diploma in Theology at the International Worship Centre, Omega Fire Ministries, along with my second ordination. I furthered my ministerial training with an Advanced Diploma and Post-Graduate Diploma at the International College of Ministry, affiliated with AMES Christian University, Florida, USA, and also earned a Certificate from the Morris Cerullo School of Ministry. In Omega Fire Ministries, I served across several branches: Aviele, Benin City, Makurdi, Ekpoma, and Ibadan. In 2016, I was posted on international assignment to Canada, beginning at the Calgary branch. From there, I pioneered and planted OFM Edmonton and was later transferred to Toronto. After serving faithfully, I resigned in obedience to the leading of the Lord. I was later employed to work with Crown of Glory Gospel Church, located at 58 Eddystone Avenue, North York, Toronto, Canada (M3N 1H7), where I continued to serve the Body of Christ from 2019-2021. In obedience to God’s mandate, I sought the will of the Lord and founded the Enlightened Gathering of the Latter Rain of the Spirit Believers Ministry, also known as Spirit Rain Church. This ministry was birthed to raise a people prepared for the latter rain outpouring of the Holy Spirit, equipping believers for holiness, revival, and the coming of the Lord Jesus Christ. My life is a testimony of the grace and faithfulness of God—from childhood visions under an orange tree, to my salvation in 1992, to marriage and family, to years of ministry in Nigeria and Canada. I remain committed to preaching Christ, discipling believers, and preparing the Church for the glorious return of our Lord and Savior.
+                    </div>
+                </div>
+                <!-- Pastor Emmanuel Amlogu -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-600 text-center pt-6">Pastor Emmanuel Amlogu</h3>
+                    <div class="flex flex-col md:flex-row p-6">
+                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                            <img src="https://raw.githubusercontent.com/victorkash/spiritrainchurch.com/refs/heads/main/P2.jpeg" alt="Pastor Emmanuel Amlogu" class="w-full md:w-48 h-48 object-cover rounded-lg">
+                        </div>
+                        <div class="flex-1 text-gray-700 leading-relaxed">
+                            I am Emmanuel Amlogu, a blessed husband to my wonderful wife, Mrs. Oluwaseyi Amlogu, and a loving father to our children. My life has been a journey of God's grace, faith, service, and innovation. Professionally, I have worked in ICT and multimedia, leveraging technology to drive innovation and creativity.
+                            This expertise has also led to meaningful collaborations, including working closely with the former Deputy Governor of Oyo State on IT and media publicity initiatives. Spiritually, I was ordained as a Pastor by Bishop Wale Oke in Oyo State, Nigeria.
+                            I served faithfully at Christ Life Church Old Bodija and Omolayo Akobo in Ibadan from 2005 to 2019, dedicating myself to spreading the gospel and nurturing my congregation.
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                           Throughout my journey, I have been blessed with opportunities to serve God, my family, and my community including 700 Great Foundation. I am grateful for the experiences and lessons learnt, and I look forward to continuing to make a positive impact.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>Spirit Rain Church | 23, Rad Events Hall And Shopping Center.
+No 1 Gba'gi Junction Akobo, Olohunda Road, Ibadan | latterrainchurchbelievers@gmail.com</p>
+        <div class="mt-4 flex justify-center space-x-6">
+            <a href="https://www.facebook.com/profile.php?id=61571370155866" target="_blank" class="hover:opacity-80">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.494v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+            <a href="https://x.com/spiritrain24?t=M0QdMuOoGuP4jMjzvVmw9Q&s=09" target="_blank" class="hover:opacity-80">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://youtu.be/-kqj4OPFLls?si=1DGiMJBkI18M7kQA" target="_blank" class="hover:opacity-80">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky nav background change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
